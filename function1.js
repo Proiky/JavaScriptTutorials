@@ -5,3 +5,7 @@ function sabira(){
 function oduzima(){
     return a-b;
 }
+
+function mnozi(){
+    return a*b;
+}
