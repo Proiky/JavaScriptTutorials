@@ -128,3 +128,4 @@ console.log(`The tips for each bill respectively are ${tips}`);
 console.log(tips);
 console.log(`The total amount i had to pay: bill+tips is ${total}`);
 console.log(total);
+
