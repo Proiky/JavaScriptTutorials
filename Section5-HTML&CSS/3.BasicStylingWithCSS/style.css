@@ -1,0 +1,40 @@
+body {
+  background-color: yellow;
+  font-family: Arial;
+  font-size: 20px;
+}
+/*Iako som iskoristili arial samo u body, svi su dobili taj font! 
+That is a property that gets inherited. All child properties of body property
+gets this font automatically!
+Vecina property-a se ne nasledjuje, al veicna koja ima veze s fontovima se naslijedjuje!
+*/
+
+/*Fontsize: nismu svi dobili font size 20px, jer npr h1 i h2, h3... imaju vec definisanu velicinu slova,
+ ali i njih mozemo prepisati na nacin da kazemo: 
+ */
+h1 {
+  font-size: 40px;
+}
+
+/*Sad koristimo one klse koje smo dodijelili u index.html fajlu
++ dodajemo jos jednu klasu u h2 u taj paragraf i zovemo je isto kao prvi paragraf da pokazemo da klase mogu imat isto ime
+*/
+
+/* tacka za klasu, first je ime klase */
+.first {
+  color: red;
+}
+
+/*vidimo da su oba pargrafa koja imaju ime first crvena, dok 
+onaj koji ima ime second nije dobio niikakvu promjenu! */
+
+/*Formatiranje forme: znamo da joj je ID first-name */
+
+/*umjesto tacke korisitmo hash jer je u pitanju ID */
+
+#your-name {
+  background-color: magenta;
+  border: 5px solid #444;
+  /*Vidimo da mogu i rgb boje pomocu #444, to je neka boja u rgb tabeli*/
+  /*na border mozemo stavit vise vrijednosti od jednom */
+}
