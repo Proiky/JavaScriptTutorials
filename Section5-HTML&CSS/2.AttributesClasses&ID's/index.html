@@ -1,0 +1,45 @@
+<!Sta su atributi? Atributi OPISUJU neke elemente. Ne mogu svi elementi unutar HTML-a imati atribute!>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning HTML & CSS</title>
+  </head>
+  <body>
+    <! h1 i p su child elementi body elementa! Jako bitno, jer to znaci da mozemo nest-ati elemente jedan u drugi>
+    <h1>JavaScript is fun but so is HTML & CSS</h1>
+    <p clas="first">
+      You can learn JS withouth HTML and CSS, but for DOM manipulation its
+      useful to have some basi ideas of HTML and CSS. You can follow this course
+      <a href="https://github.com/Proiky/JavaScriptTutorials">on GitHub</a>
+      <! a - attribute, a-hypertext reference>
+    </p>
+    <h2>Another heading but smaller</h2>
+    <p class="second">Just another paragraph!</p>
+
+    <img id="edo" src="https://avatars.githubusercontent.com/u/111066706?v=4" />
+    <! img nema closing tab, sve je u jednom tabu>
+    <! We use classes and ID's so we NAME elements, to select them in CSS and style them!>
+    <! Classes and ID's are cruical!>
+    <! We can add them at ANY element>
+    <! Klase smo dodali na oba paragrafa i dali im ime!>
+    <! Dodajemo ID na sliku: >
+    <! Razlika je sto ID mora bit jedinstven, dok mozemo imat vise klasa istih imena!>
+    <! U praksi jako rijeetko koristimo ID's>
+
+    <form id="your-name">
+      <! generic box, ako zelimo nas sadrzaj u nekom box-u>
+      <! Vidimo kod HTML-a i CSS-a imena razdvajamo -, npr edo-slika, edo-kralj itd..>
+      <h2>Your name here</h2>
+      <p>Please fill in this form :)</p>
+
+      <input type="text" placeholder="Your name" />
+      <button>OK</button>
+      <! na ovaj nacin pravimo input u stranicu, ili formu />
+    </form>
+    <! gdje je bio form, bilo je div. Medjutim kako mi trazimo input form je dosta prikladniji za forme i unos podataka, te smo div zamijenili sa form>
+  </body>
+</html>
