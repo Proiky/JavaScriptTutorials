@@ -1,0 +1,80 @@
+/*Uvijek kad radimo sa CSS-om moramo sve vratiti na nulu! Odnosno sve ponistiti kako bi mogli ispravno raditi ispocetka!
+Ovo radimo sa * selektorom, tako selektiramo sve moguce opcije na nacin:
+*/
+
+* {
+  margin: 0; /*kad je 0 ne moramo rec px nit sta slicno */
+  padding: 0;
+  /*svi paddinzi i svi margini su uklonjeni */
+  box-sizing: border-box;
+  /*ovo uvijek iskoristimo, al nismo objasnili staj ovo */
+}
+
+body {
+  background-color: yellow;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 75px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  /* dodaje margin samo bottom strani h1 dijela */
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  /*centrira tekst unutar box-a */
+}
+
+p {
+  margin-bottom: 20px;
+}
+/*uzme sve paragrafe bez obzira na njihovo ime */
+
+.first {
+  color: red;
+}
+
+#your-name {
+  background-color: magenta;
+  border: 5px solid #444;
+  width: 400px;
+  padding: 25px;
+  margin-top: 30px;
+  margin-left: 120px;
+}
+
+/*border margin itd uvijek mozemo gledati u browseru -> desni klik -> inspect -> elements -> izaberemo dio koji zelimo -> i desno na styles, spustimo do kraja i vidimo dimenzije! */
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+/* za input i button, kako smo stavili zarez izmedju njih, ova pravila ce uticat na oba */
+
+a {
+  background-color: yellowgreen;
+}
+/*ovo je za atribut, odnosno nas hyperlink */
+
+/* sad cemo vidjet primjer child - selektora */
+/* kazemo uzmi h2 koji je dijete id-a your-name */
+
+#your-name h2 {
+  color: olive;
+}
+/*Samo promijeni dijete id-a your-name. iako smo nedje gore jos imali h2, na njega ne utice :) */
+
+/*Jos jedna bitna stvar je velicina slike: jer nace bude velika koliko moze biti: */
+
+#edo {
+  margin-left: 160px;
+  width: 300px;
+  height: 300px;
+}
+
+/*dali smo slici ID pa cemo preko njeg, a moze i preko img {} funkcije */
