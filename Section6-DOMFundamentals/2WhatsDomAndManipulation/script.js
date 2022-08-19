@@ -1,4 +1,4 @@
-//U ovoj sekciji cemo konfigurisati JS da komunicira sa web stranicom, drugim rijecima to se zove DOM MANIPULATION`:W
+//U ovoj sekciji cemo konfigurisati JS da komunicira sa web stranicom, drugim rijecima to se zove DOM MANIPULATION
 
 //What the DOM actually is and how does it work ?
 //DOM - DOCUMENT OBJEC MODEL -> structured representation of html documents. Allow JS to access html elemnts and styles and manipulate them!
